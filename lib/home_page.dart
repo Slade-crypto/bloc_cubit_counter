@@ -23,7 +23,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed('/cubit');
+              },
               child: Text(
                 'cubit',
                 style: Theme.of(context).textTheme.headlineMedium,
